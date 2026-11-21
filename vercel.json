@@ -2,19 +2,6 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.evstyle.am"
-        }
-      ],
-      "destination": "https://evstyle.am/:path*",
-      "statusCode": 301
-    }
-  ],
   "rewrites": [
     {
       "source": "/((?!api/)(?!.*\\.).*)",

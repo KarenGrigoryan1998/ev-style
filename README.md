@@ -152,7 +152,7 @@ Keep `utm_source` and `utm_campaign` short and lowercase, because they become th
 ## Deploy (Vercel)
 
 1. Import the GitHub repo on [vercel.com](https://vercel.com). `vercel.json` already sets up the build.
-2. Vercel → Settings → Domains: add `evstyle.am` **and** `www.evstyle.am`. `vercel.json` 301-redirects `www` → `evstyle.am`.
+2. Vercel → Settings → Domains: add `evstyle.am` **and** `www.evstyle.am`. `evstyle.am` must be the main one (connected to Production), and `www.evstyle.am` must be set to **Redirect to evstyle.am** (301 or 308). Never the other way round, because the whole site, sitemap and feeds use `evstyle.am`.
 3. The site address used for canonical URLs, hreflang, Open Graph, the sitemap and the feeds is `siteUrl` in `src/config/site.ts` (`https://evstyle.am`).
 4. For Conversions API, set the env vars from *Tracking & Ads* above.
 
