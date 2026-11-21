@@ -4,13 +4,13 @@ import type { Product } from '@/lib/types'
 import { useLang } from '@/hooks/useLang'
 import { useModelName } from '@/hooks/useModelName'
 import { formatProductPrice } from '@/lib/formatPrice'
-import { messengerLink, orderViaMessenger } from '@/lib/contact'
 import { ProductImage } from './ProductImage'
 import { ProductBadges } from './ProductBadges'
 import { ColorDots } from './ColorDots'
 import { Chip } from '@/components/ui/Chip'
 import { MessengerIcon } from '@/components/ui/BrandIcons'
 import { buttonClass } from '@/components/ui/Button'
+import { ContactButton } from '@/components/ui/ContactButton'
 
 interface Props {
   product: Product
@@ -24,7 +24,6 @@ export function ProductCard({ product, model }: Props) {
   const name = product.name[lang]
   const price = formatProductPrice(product)
   const detailsUrl = to(`/product/${product.slug}`)
-  const waModel = model ? modelName(model) : undefined
 
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.06] bg-night-850 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-ev/25 hover:shadow-[0_30px_60px_-30px_rgba(113,219,61,.35)]">
@@ -63,17 +62,17 @@ export function ProductCard({ product, model }: Props) {
         </div>
 
         <div className="relative z-10 grid grid-cols-1 gap-2 pt-1 sm:grid-cols-[1fr_auto]">
-          <a
-            href={messengerLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={orderViaMessenger(name, waModel, lang, product.id)}
+          <ContactButton
+            channel="messenger"
+            placement="product"
+            product={product}
+            model={model}
             aria-label={`${t('common.orderMessenger')}: ${name}`}
             className={buttonClass('facebook', 'md', 'w-full min-w-0 !h-10 !px-2 text-sm sm:!h-11 sm:!px-3')}
           >
             <MessengerIcon size={18} className="shrink-0" />
             <span className="truncate">{t('common.order')}</span>
-          </a>
+          </ContactButton>
           <Link to={detailsUrl} className={buttonClass('secondary', 'md', '!hidden !h-11 !w-11 !px-0 sm:!inline-flex')} aria-label={`${t('common.details')}: ${name}`}>
             <ArrowUpRight size={18} aria-hidden />
           </Link>

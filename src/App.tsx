@@ -19,10 +19,8 @@ const PREFIXES: { path: string; lang: Lang }[] = [
 const Fallback = () => <div className="min-h-screen" />
 
 export default function App() {
-  useEffect(() => {
-    const id = window.setTimeout(initAnalytics, 1500)
-    return () => window.clearTimeout(id)
-  }, [])
+  // Loads tracking only if the visitor accepted cookies before (scripts are injected when the browser is idle)
+  useEffect(initAnalytics, [])
 
   return (
     <Suspense fallback={<Fallback />}>

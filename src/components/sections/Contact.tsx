@@ -5,17 +5,13 @@ import { Reveal } from '@/components/ui/Reveal'
 import { InstagramIcon, MessengerIcon, ViberIcon, WhatsAppIcon } from '@/components/ui/BrandIcons'
 import { useLang } from '@/hooks/useLang'
 import { site } from '@/config/site'
-import { buildWhatsAppLink, messengerLink, onContactClick, phoneLink, viberLink } from '@/lib/contact'
+import { ContactButton, FollowLink } from '@/components/ui/ContactButton'
+import type { ContactChannel } from '@/lib/analytics'
 
-function Channel({ href, icon, label, sub, color, channel }: { href: string; icon: ReactNode; label: string; sub: string; color: string; channel: string }) {
-  const external = href.startsWith('http')
-  return (
-    <a
-      href={href}
-      {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-      onClick={onContactClick(channel, 'contact')}
-      className="group flex items-center gap-4 rounded-2xl border border-white/[0.07] bg-night-850 p-4 transition-all hover:-translate-y-0.5 hover:border-white/15"
-    >
+function Channel({ icon, label, sub, color, channel }: { icon: ReactNode; label: string; sub: string; color: string; channel: ContactChannel | 'instagram' }) {
+  const className = 'group flex items-center gap-4 rounded-2xl border border-white/[0.07] bg-night-850 p-4 transition-all hover:-translate-y-0.5 hover:border-white/15'
+  const inner = (
+    <>
       <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl" style={{ background: `${color}1f`, color }}>
         {icon}
       </span>
@@ -23,7 +19,16 @@ function Channel({ href, icon, label, sub, color, channel }: { href: string; ico
         <span className="block font-semibold text-white">{label}</span>
         <span className="block truncate text-sm text-mist-500">{sub}</span>
       </span>
-    </a>
+    </>
+  )
+  return channel === 'instagram' ? (
+    <FollowLink network="instagram" className={className}>
+      {inner}
+    </FollowLink>
+  ) : (
+    <ContactButton channel={channel} placement="contact" className={className}>
+      {inner}
+    </ContactButton>
   )
 }
 
@@ -40,12 +45,12 @@ export function Contact() {
         <div className="grid gap-6 lg:grid-cols-[1fr_1.1fr]">
           <div className="flex flex-col gap-3">
             <Reveal className="grid gap-3 sm:grid-cols-2">
-              <Channel channel="messenger" href={messengerLink()} icon={<MessengerIcon size={24} />} label="Messenger" sub={site.social.facebook.handle} color="#4FA3FF" />
-              <Channel channel="whatsapp" href={buildWhatsAppLink(undefined, undefined, lang)} icon={<WhatsAppIcon size={24} />} label="WhatsApp" sub={site.contacts.phoneDisplay} color="#25D366" />
-              <Channel channel="viber" href={viberLink()} icon={<ViberIcon size={24} />} label="Viber" sub={site.contacts.phoneDisplay} color="#8F5DB7" />
-              <Channel channel="instagram" href={site.social.instagram.url} icon={<InstagramIcon size={24} />} label="Instagram" sub={site.social.instagram.handle} color="#E1306C" />
+              <Channel channel="messenger" icon={<MessengerIcon size={24} />} label="Messenger" sub={site.social.facebook.handle} color="#4FA3FF" />
+              <Channel channel="whatsapp" icon={<WhatsAppIcon size={24} />} label="WhatsApp" sub={site.contacts.phoneDisplay} color="#25D366" />
+              <Channel channel="viber" icon={<ViberIcon size={24} />} label="Viber" sub={site.contacts.phoneDisplay} color="#8F5DB7" />
+              <Channel channel="instagram" icon={<InstagramIcon size={24} />} label="Instagram" sub={site.social.instagram.handle} color="#E1306C" />
               <div className="sm:col-span-2">
-                <Channel channel="phone" href={phoneLink()} icon={<Phone size={22} />} label={t('common.call')} sub={site.contacts.phoneDisplay} color="#71DB3D" />
+                <Channel channel="phone" icon={<Phone size={22} />} label={t('common.call')} sub={site.contacts.phoneDisplay} color="#71DB3D" />
               </div>
             </Reveal>
 

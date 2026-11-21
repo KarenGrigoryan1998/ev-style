@@ -1,6 +1,6 @@
 import { FacebookIcon, InstagramIcon, TikTokIcon } from '@/components/ui/BrandIcons'
 import { site } from '@/config/site'
-import { onContactClick } from '@/lib/contact'
+import { FollowLink } from '@/components/ui/ContactButton'
 
 /** Facebook first, then Instagram, then TikTok */
 export const SOCIALS = [
@@ -19,18 +19,15 @@ export const SOCIAL_COLORS: Record<string, string> = {
 export function SocialLinks({ className = '' }: { className?: string }) {
   return (
     <ul className={`flex items-center gap-2 ${className}`}>
-      {SOCIALS.map(({ key, label, url, Icon }) => (
+      {SOCIALS.map(({ key, label, Icon }) => (
         <li key={key}>
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
+          <FollowLink
+            network={key}
             aria-label={label}
-            onClick={onContactClick(key, 'footer')}
             className="grid h-10 w-10 place-items-center rounded-xl border border-white/[0.08] text-mist-300 transition-all hover:border-ev/40 hover:text-ev hover:shadow-glow"
           >
             <Icon size={18} />
-          </a>
+          </FollowLink>
         </li>
       ))}
     </ul>

@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 import { m } from 'framer-motion'
 import { ArrowDown, Check } from 'lucide-react'
-import { Button } from '@/components/ui/Button'
+import { Button, buttonClass } from '@/components/ui/Button'
+import { ContactButton } from '@/components/ui/ContactButton'
 import { MessengerIcon } from '@/components/ui/BrandIcons'
 import { useLang } from '@/hooks/useLang'
-import { messengerLink, onContactClick } from '@/lib/contact'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
@@ -78,15 +78,10 @@ export function Hero() {
             <Button href="#products" size="lg" icon={<ArrowDown size={18} aria-hidden />}>
               {t('hero.ctaPrimary')}
             </Button>
-            <Button
-              href={messengerLink()}
-              variant="secondary"
-              size="lg"
-              icon={<MessengerIcon size={20} className="text-[#4FA3FF]" />}
-              onClick={onContactClick('messenger', 'hero')}
-            >
+            <ContactButton channel="messenger" placement="hero" className={buttonClass('secondary', 'lg')}>
+              <MessengerIcon size={20} className="text-[#4FA3FF]" />
               {t('hero.ctaSecondary')}
-            </Button>
+            </ContactButton>
           </m.div>
         </div>
 

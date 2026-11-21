@@ -22,7 +22,7 @@ export function ProductsGrid() {
           title={t('products.title')}
           subtitle={t(site.commerce.showPrices ? 'products.subtitle' : 'products.subtitleNoPrices')}
         />
-        {!site.commerce.showPrices && <ContactChips where="products-intro" className="-mt-6 mb-10 sm:-mt-8 sm:mb-12" />}
+        {!site.commerce.showPrices && <ContactChips placement="products" className="-mt-6 mb-10 sm:-mt-8 sm:mb-12" />}
 
         <ul className="grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4">
           {list.map((p, i) => (
@@ -33,7 +33,7 @@ export function ProductsGrid() {
         </ul>
 
         <CatalogCta className="mt-10" />
-        <MoreProductsNote where="home" className="mt-4" />
+        <MoreProductsNote placement="products" className="mt-4" />
       </div>
     </section>
   )

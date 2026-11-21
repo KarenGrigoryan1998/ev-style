@@ -2,34 +2,28 @@ import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { AnimatePresence, m } from 'framer-motion'
 import { MessageCircle, X } from 'lucide-react'
 import { MessengerIcon, InstagramIcon, TikTokIcon, ViberIcon, WhatsAppIcon } from '@/components/ui/BrandIcons'
-import { site } from '@/config/site'
+import { ContactButton, FollowLink, type SocialNetwork } from '@/components/ui/ContactButton'
 import { useLang } from '@/hooks/useLang'
-import { buildWhatsAppLink, messengerLink, onContactClick, viberLink } from '@/lib/contact'
+import type { ContactChannel } from '@/lib/analytics'
 
-interface Channel {
-  key: string
-  label: string
-  href: string
-  bg: string
-  icon: ReactNode
-}
+type Channel = { label: string; bg: string; icon: ReactNode } & ({ channel: ContactChannel } | { network: SocialNetwork })
 
 /**
  * Expandable contact button at the bottom right (tablet/desktop; phones use MobileContactBar).
  * One "Message us" button → opens Facebook Messenger, Instagram, TikTok, WhatsApp, Viber.
  */
 export function SocialDock() {
-  const { t, lang } = useLang()
+  const { t } = useLang()
   const [open, setOpen] = useState(false)
   const [seen, setSeen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
   const channels: Channel[] = [
-    { key: 'messenger', label: 'Facebook Messenger', href: messengerLink(), bg: '#1877F2', icon: <MessengerIcon size={22} /> },
-    { key: 'instagram', label: 'Instagram', href: site.social.instagram.url, bg: 'linear-gradient(45deg,#F58529,#DD2A7B 55%,#8134AF)', icon: <InstagramIcon size={22} /> },
-    { key: 'tiktok', label: 'TikTok', href: site.social.tiktok.url, bg: '#000000', icon: <TikTokIcon size={22} /> },
-    { key: 'whatsapp', label: 'WhatsApp', href: buildWhatsAppLink(undefined, undefined, lang), bg: '#25D366', icon: <WhatsAppIcon size={22} /> },
-    { key: 'viber', label: 'Viber', href: viberLink(), bg: '#7360F2', icon: <ViberIcon size={22} /> },
+    { channel: 'messenger', label: 'Facebook Messenger', bg: '#1877F2', icon: <MessengerIcon size={22} /> },
+    { network: 'instagram', label: 'Instagram', bg: 'linear-gradient(45deg,#F58529,#DD2A7B 55%,#8134AF)', icon: <InstagramIcon size={22} /> },
+    { network: 'tiktok', label: 'TikTok', bg: '#000000', icon: <TikTokIcon size={22} /> },
+    { channel: 'whatsapp', label: 'WhatsApp', bg: '#25D366', icon: <WhatsAppIcon size={22} /> },
+    { channel: 'viber', label: 'Viber', bg: '#7360F2', icon: <ViberIcon size={22} /> },
   ]
 
   // Close on Esc or a click outside
@@ -57,21 +51,9 @@ export function SocialDock() {
             exit="closed"
             variants={{ open: { transition: { staggerChildren: 0.04, staggerDirection: -1 } }, closed: { transition: { staggerChildren: 0.03 } } }}
           >
-            {channels.map((c) => (
-              <m.li
-                key={c.key}
-                variants={{ open: { opacity: 1, y: 0, scale: 1 }, closed: { opacity: 0, y: 12, scale: 0.9 } }}
-                transition={{ type: 'spring', stiffness: 380, damping: 26 }}
-              >
-                <a
-                  href={c.href}
-                  {...(c.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                  onClick={() => {
-                    onContactClick(c.key, 'dock')()
-                    setOpen(false)
-                  }}
-                  className="group flex items-center gap-3"
-                >
+            {channels.map((c) => {
+              const inner = (
+                <>
                   <span className="rounded-lg border border-white/10 bg-night-850/95 px-3 py-1.5 text-sm font-medium text-white shadow-card backdrop-blur transition-colors group-hover:border-white/25">
                     {c.label}
                   </span>
@@ -81,9 +63,27 @@ export function SocialDock() {
                   >
                     {c.icon}
                   </span>
-                </a>
-              </m.li>
-            ))}
+                </>
+              )
+              const close = () => setOpen(false)
+              return (
+                <m.li
+                  key={c.label}
+                  variants={{ open: { opacity: 1, y: 0, scale: 1 }, closed: { opacity: 0, y: 12, scale: 0.9 } }}
+                  transition={{ type: 'spring', stiffness: 380, damping: 26 }}
+                >
+                  {'channel' in c ? (
+                    <ContactButton channel={c.channel} placement="floating" onClick={close} className="group flex items-center gap-3">
+                      {inner}
+                    </ContactButton>
+                  ) : (
+                    <FollowLink network={c.network} onClick={close} className="group flex items-center gap-3">
+                      {inner}
+                    </FollowLink>
+                  )}
+                </m.li>
+              )
+            })}
           </m.ul>
         )}
       </AnimatePresence>

@@ -1,10 +1,10 @@
 import { Accordion } from '@/components/ui/Accordion'
 import { SectionTitle } from '@/components/ui/SectionTitle'
 import { Reveal } from '@/components/ui/Reveal'
-import { Button } from '@/components/ui/Button'
+import { buttonClass } from '@/components/ui/Button'
+import { ContactButton } from '@/components/ui/ContactButton'
 import { MessengerIcon } from '@/components/ui/BrandIcons'
 import { useLang } from '@/hooks/useLang'
-import { messengerLink, onContactClick } from '@/lib/contact'
 import faqIds from '@/data/faq.json'
 
 export function FAQ() {
@@ -18,9 +18,10 @@ export function FAQ() {
           <Accordion items={items} defaultOpen={items[0]?.id} />
         </Reveal>
         <div className="mt-8 flex justify-center">
-          <Button href={messengerLink()} variant="ghost" icon={<MessengerIcon size={18} className="text-[#4FA3FF]" />} onClick={onContactClick('messenger', 'faq')}>
+          <ContactButton channel="messenger" placement="faq" className={buttonClass('ghost', 'md')}>
+            <MessengerIcon size={18} className="text-[#4FA3FF]" />
             {t('faq.more')}
-          </Button>
+          </ContactButton>
         </div>
       </div>
     </section>

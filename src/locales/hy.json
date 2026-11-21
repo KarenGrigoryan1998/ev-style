@@ -198,6 +198,13 @@
     "rights": "Բոլոր իրավունքները պաշտպանված են։",
     "disclaimer": "Deepal-ը և Changan-ը իրենց սեփականատերերի ապրանքանիշերն են։ EVStyle-ը պաշտոնական դիլեր չէ։"
   },
+  "consent": {
+    "title": "Cookie-ներ",
+    "text": "Մենք օգտագործում ենք cookie-ներ։",
+    "accept": "Լավ",
+    "necessary": "Միայն անհրաժեշտները",
+    "settings": "Cookie-ների կարգավորումներ"
+  },
   "whatsapp": {
     "productWithModel": "Բարև Ձեզ 😊 Ինձ հետաքրքրում է՝ {{product}}։ Իմ մեքենան՝ {{model}}։",
     "product": "Բարև Ձեզ 😊 Ինձ հետաքրքրում է՝ {{product}}։ Իմ մեքենան՝ ",

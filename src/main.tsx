@@ -7,6 +7,10 @@ import './fonts.css'
 import './index.css'
 import './lib/i18n'
 import App from './App'
+import { captureUtm } from './lib/utm'
+
+// Save utm_* / fbclid / ttclid from the ad click before anything else
+captureUtm()
 
 const root = document.getElementById('root')!
 const app = (

@@ -1,20 +1,23 @@
 import { PackageSearch } from 'lucide-react'
 import { InstagramIcon, MessengerIcon, TikTokIcon, ViberIcon, WhatsAppIcon } from '@/components/ui/BrandIcons'
 import { buttonClass } from '@/components/ui/Button'
+import { ContactButton, FollowLink, type SocialNetwork } from '@/components/ui/ContactButton'
 import { useLang } from '@/hooks/useLang'
-import { site } from '@/config/site'
-import { buildWhatsAppLink, messengerLink, onContactClick, viberLink } from '@/lib/contact'
+import type { ContactChannel, Placement } from '@/lib/analytics'
+
+type Item = { label: string; Icon: typeof InstagramIcon; color: string } & ({ channel: ContactChannel } | { network: SocialNetwork })
 
 /** Highlighted note: the site doesn't list every product — ask us for the full range */
-export function MoreProductsNote({ className = '', where }: { className?: string; where: string }) {
-  const { t, lang } = useLang()
+export function MoreProductsNote({ className = '', placement }: { className?: string; placement: Placement }) {
+  const { t } = useLang()
   // Priority: Messenger (primary) → Instagram → TikTok → WhatsApp → Viber
-  const secondary = [
-    { key: 'instagram', label: 'Instagram', href: site.social.instagram.url, Icon: InstagramIcon, color: 'text-[#F0679B]' },
-    { key: 'tiktok', label: 'TikTok', href: site.social.tiktok.url, Icon: TikTokIcon, color: 'text-white' },
-    { key: 'whatsapp', label: 'WhatsApp', href: buildWhatsAppLink(undefined, undefined, lang), Icon: WhatsAppIcon, color: 'text-[#25D366]' },
-    { key: 'viber', label: 'Viber', href: viberLink(), Icon: ViberIcon, color: 'text-[#A78BFA]' },
+  const secondary: Item[] = [
+    { network: 'instagram', label: 'Instagram', Icon: InstagramIcon, color: 'text-[#F0679B]' },
+    { network: 'tiktok', label: 'TikTok', Icon: TikTokIcon, color: 'text-white' },
+    { channel: 'whatsapp', label: 'WhatsApp', Icon: WhatsAppIcon, color: 'text-[#25D366]' },
+    { channel: 'viber', label: 'Viber', Icon: ViberIcon, color: 'text-[#A78BFA]' },
   ]
+  const small = buttonClass('secondary', 'md', 'min-w-0 !h-auto flex-col !gap-1 !px-2 py-2.5 text-xs sm:!h-11 sm:flex-row sm:!gap-1.5 sm:!px-3 sm:py-0 sm:text-sm')
   return (
     <aside
       className={`relative overflow-hidden rounded-2xl border border-ev/30 bg-gradient-to-r from-ev/[0.10] via-ev/[0.05] to-transparent p-5 sm:p-6 ${className}`}
@@ -32,28 +35,27 @@ export function MoreProductsNote({ className = '', where }: { className?: string
           </div>
         </div>
         <div className="flex shrink-0 flex-col gap-2 sm:flex-row sm:items-center">
-          <a
-            href={messengerLink()}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={onContactClick('messenger', `more-products-${where}`)}
-            className={buttonClass('facebook', 'md', 'w-full sm:w-auto')}
-          >
+          <ContactButton channel="messenger" placement={placement} className={buttonClass('facebook', 'md', 'w-full sm:w-auto')}>
             <MessengerIcon size={18} /> {t('moreProducts.ctaMessenger')}
-          </a>
+          </ContactButton>
           <div className="grid grid-cols-4 gap-2 sm:flex">
-            {secondary.map(({ key, label, href, Icon, color }) => (
-              <a
-                key={key}
-                href={href}
-                {...(href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                onClick={onContactClick(key, `more-products-${where}`)}
-                className={buttonClass('secondary', 'md', 'min-w-0 !h-auto flex-col !gap-1 !px-2 py-2.5 text-xs sm:!h-11 sm:flex-row sm:!gap-1.5 sm:!px-3 sm:py-0 sm:text-sm')}
-              >
-                <Icon size={18} className={`shrink-0 ${color}`} />
-                <span>{label}</span>
-              </a>
-            ))}
+            {secondary.map((it) => {
+              const inner = (
+                <>
+                  <it.Icon size={18} className={`shrink-0 ${it.color}`} />
+                  <span>{it.label}</span>
+                </>
+              )
+              return 'channel' in it ? (
+                <ContactButton key={it.label} channel={it.channel} placement={placement} className={small}>
+                  {inner}
+                </ContactButton>
+              ) : (
+                <FollowLink key={it.label} network={it.network} className={small}>
+                  {inner}
+                </FollowLink>
+              )
+            })}
           </div>
         </div>
       </div>

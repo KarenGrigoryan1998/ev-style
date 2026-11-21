@@ -5,11 +5,11 @@ import { Menu, X } from 'lucide-react'
 import { Logo } from './Logo'
 import { HashLink } from './HashLink'
 import { LanguageSwitcher } from './LanguageSwitcher'
-import { Button } from '@/components/ui/Button'
+import { buttonClass } from '@/components/ui/Button'
+import { ContactButton } from '@/components/ui/ContactButton'
 import { MessengerIcon } from '@/components/ui/BrandIcons'
 import { useLang } from '@/hooks/useLang'
 import { useScrolled } from '@/hooks/useScrolled'
-import { messengerLink, onContactClick } from '@/lib/contact'
 import { hasReviews } from '@/lib/products'
 
 /** Menu items: `id` = section on the home page, `to` = separate page */
@@ -72,16 +72,10 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <LanguageSwitcher className="hidden sm:inline-flex" />
-          <Button
-            href={messengerLink()}
-            variant="facebook"
-            size="sm"
-            icon={<MessengerIcon size={18} />}
-            className="hidden md:inline-flex"
-            onClick={onContactClick('messenger', 'header')}
-          >
+          <ContactButton channel="messenger" placement="header" className={buttonClass('facebook', 'sm', 'hidden md:inline-flex')}>
+            <MessengerIcon size={18} />
             {t('common.writeUs')}
-          </Button>
+          </ContactButton>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}

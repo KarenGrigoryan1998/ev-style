@@ -44,7 +44,8 @@ export default function Catalog() {
   const [query, setQuery] = useState('')
   const [sort, setSort] = useState<Sort>('featured')
 
-  const setModel = (id: ModelId | null) => navigate(to(id ? `/catalog/${id.toLowerCase()}` : '/catalog'), { replace: true, preventScrollReset: true })
+  const setModel = (id: ModelId | null) =>
+    navigate(to(id ? `/catalog/${id.toLowerCase()}` : '/catalog'), { replace: true, preventScrollReset: true })
 
   const list = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -71,7 +72,7 @@ export default function Catalog() {
         </h1>
         <p className="mt-3 max-w-xl text-mist-400">{t('catalog.subtitle')}</p>
 
-        <MoreProductsNote where="catalog" className="mt-6" />
+        <MoreProductsNote placement="catalog" className="mt-6" />
 
         <div className="mt-8 space-y-4 rounded-2xl border border-white/[0.06] bg-night-850 p-4 sm:p-5">
           <div className="flex flex-col gap-3 sm:flex-row">

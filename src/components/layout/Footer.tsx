@@ -4,6 +4,7 @@ import { NAV, NavEntry } from './Header'
 import { SocialLinks } from './SocialLinks'
 import { useLang } from '@/hooks/useLang'
 import { site } from '@/config/site'
+import { setConsent, trackingEnabled } from '@/lib/analytics'
 
 export function Footer() {
   const { t } = useLang()
@@ -30,6 +31,14 @@ export function Footer() {
         <div className="container flex flex-col gap-2 py-6 text-xs text-mist-500 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {new Date().getFullYear()} {site.brandFull}. {t('footer.rights')}
+            {trackingEnabled && (
+              <>
+                {' · '}
+                <button type="button" onClick={() => setConsent(null)} className="underline-offset-2 hover:text-white hover:underline">
+                  {t('consent.settings')}
+                </button>
+              </>
+            )}
           </p>
           <p className="max-w-md sm:text-right">{t('footer.disclaimer')}</p>
         </div>

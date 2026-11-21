@@ -7,8 +7,8 @@ export const site = {
   brand: 'EVStyle',
   /** Full name used in SEO, schema.org, copyright and social handles */
   brandFull: 'EVStyle Armenia',
-  /** Public address — set automatically at build time (Vercel production domain, or SITE_URL env). See vite.config.ts */
-  url: __SITE_URL__,
+  /** Public address: canonical URLs, Open Graph, hreflang, sitemap, JSON-LD, product feeds */
+  siteUrl: 'https://evstyle.am',
 
   contacts: {
     /** Shown on the site */
@@ -66,11 +66,26 @@ export const site = {
     preorderWeeks: '2–4',
   },
 
+  /**
+   * Tracking IDs (public — safe in frontend code). Empty = that platform is off, nothing is loaded.
+   * Scripts load only after the visitor clicks "Accept" in the cookie banner. See README → Tracking & Ads.
+   * The Conversions API token is NOT here — it goes in Vercel env vars (META_CAPI_TOKEN, META_PIXEL_ID).
+   */
   analytics: {
-    /** Meta (Facebook) Pixel ID, e.g. '1234567890'. Empty = disabled */
-    metaPixelId: '',
-    /** Google Analytics 4 ID, e.g. 'G-XXXXXXX'. Empty = disabled */
-    gaId: '',
+    /** Meta (Facebook/Instagram) Pixel ID, e.g. '1234567890123456' */
+    metaPixelId: '1679870337150695',
+    /** Google Analytics 4 Measurement ID, e.g. 'G-XXXXXXXXXX' */
+    ga4Id: '',
+    /** TikTok Pixel ID, e.g. 'CXXXXXXXXXXXXXXXXXXX' */
+    tiktokPixelId: '',
+  },
+
+  /** Domain verification codes — the <meta> tag is added only when filled. Paste only the content="..." value */
+  verification: {
+    /** Meta Business Settings → Brand safety → Domains → Meta-tag verification */
+    metaDomainVerification: '',
+    /** Google Search Console → HTML tag */
+    googleSiteVerification: '',
   },
 } as const
 

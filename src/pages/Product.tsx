@@ -2,7 +2,7 @@
  * Phase 2 — Product page: gallery, video, compatible models, colours, price, badges,
  * "Order via WhatsApp" (with model picker) and related products.
  */
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ChevronLeft, Clock, PlayCircle, Truck, Wrench, Zap } from 'lucide-react'
 import { Seo } from '@/components/layout/Seo'
@@ -12,12 +12,13 @@ import { ColorDots } from '@/components/product/ColorDots'
 import { ProductCard } from '@/components/product/ProductCard'
 import { buttonClass } from '@/components/ui/Button'
 import { MessengerIcon, WhatsAppIcon } from '@/components/ui/BrandIcons'
+import { ContactButton } from '@/components/ui/ContactButton'
 import { useLang } from '@/hooks/useLang'
 import { useModelName } from '@/hooks/useModelName'
 import { getProductBySlug, getRelatedProducts, imgSrc } from '@/lib/products'
 import { formatProductPrice } from '@/lib/formatPrice'
 import { productJsonLd } from '@/lib/seo'
-import { buildWhatsAppLink, messengerLink, onContactClick, orderViaMessenger } from '@/lib/contact'
+import { productParams, track } from '@/lib/analytics'
 import NotFound from './NotFound'
 
 export default function Product() {
@@ -28,6 +29,10 @@ export default function Product() {
   const [active, setActive] = useState(0)
   const [variantId, setVariantId] = useState<string>('')
   const [showVideo, setShowVideo] = useState(false)
+
+  useEffect(() => {
+    if (product) track('ViewContent', productParams(product))
+  }, [product?.id]) // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!product) return <NotFound />
 
@@ -45,7 +50,8 @@ export default function Product() {
         title={`${name} — EVStyle Armenia`}
         description={product.description[lang]}
         path={`/product/${product.slug}`}
-        image={product.images[0] ? imgSrc(product.images[0], 1440) : undefined}
+        image={product.images[0] ? `/images/share/${product.id}.jpg` : undefined}
+        imageSize={product.images[0] ? { width: 1200, height: 1200 } : undefined}
         jsonLd={productJsonLd(product, lang)}
       />
       <div className="container">
@@ -148,24 +154,12 @@ export default function Product() {
             </div>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <a
-                href={messengerLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={orderViaMessenger(orderName, undefined, lang, product.id)}
-                className={buttonClass('facebook', 'lg', 'w-full sm:w-auto')}
-              >
+              <ContactButton channel="messenger" placement="product" product={product} orderName={orderName} className={buttonClass('facebook', 'lg', 'w-full sm:w-auto')}>
                 <MessengerIcon size={22} /> {t('common.orderMessenger')}
-              </a>
-              <a
-                href={buildWhatsAppLink(orderName, undefined, lang)}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={onContactClick('whatsapp', product.id)}
-                className={buttonClass('ghost', 'lg', 'w-full sm:w-auto')}
-              >
+              </ContactButton>
+              <ContactButton channel="whatsapp" placement="product" product={product} orderName={orderName} className={buttonClass('ghost', 'lg', 'w-full sm:w-auto')}>
                 <WhatsAppIcon size={20} className="text-[#25D366]" /> {t('common.orWhatsApp')}
-              </a>
+              </ContactButton>
             </div>
 
             <ul className="card mt-8 space-y-3 p-5 text-sm text-mist-300">

@@ -3,7 +3,7 @@ import { LANGS, localizedPath } from './i18n'
 import { imgSrc } from './products'
 import type { Lang, Product } from './types'
 
-const abs = (path: string) => `${site.url.replace(/\/$/, '')}${path}`
+const abs = (path: string) => `${site.siteUrl.replace(/\/$/, '')}${path}`
 
 /** hreflang alternates for a language-neutral path like '/catalog' */
 export function alternates(path: string) {

@@ -198,6 +198,13 @@
     "rights": "Все права защищены.",
     "disclaimer": "Deepal и Changan — товарные знаки их владельцев. EVStyle не является официальным дилером."
   },
+  "consent": {
+    "title": "Cookie",
+    "text": "Мы используем cookie.",
+    "accept": "Хорошо",
+    "necessary": "Только необходимые",
+    "settings": "Настройки cookie"
+  },
   "whatsapp": {
     "productWithModel": "Здравствуйте! Меня интересует: {{product}}. Мой автомобиль: {{model}}.",
     "product": "Здравствуйте! Меня интересует: {{product}}. Мой автомобиль: ",

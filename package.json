@@ -6,11 +6,16 @@
   "scripts": {
     "dev": "vite",
     "check": "node scripts/check-content.mjs",
-    "build": "npm run check && tsc -b && vite build && vite build --ssr src/entry-server.tsx && node scripts/prerender.mjs",
+    "build": "npm run check && npm run sitemap && npm run feed && tsc -b && vite build && vite build --ssr src/entry-server.tsx && node scripts/prerender.mjs",
     "preview": "vite preview",
     "typecheck": "tsc -b",
-    "import-media": "node scripts/import-media.mjs",
-    "find-new-products": "node scripts/find-new-products.mjs"
+    "import-media": "node --env-file-if-exists=.env scripts/import-media.mjs",
+    "find-new-products": "node --env-file-if-exists=.env scripts/find-new-products.mjs",
+    "sitemap": "node --experimental-strip-types --no-warnings scripts/build-sitemap.ts",
+    "feed": "node --experimental-strip-types --no-warnings scripts/build-feed.ts"
+  },
+  "engines": {
+    "node": ">=22.9"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.1.0",

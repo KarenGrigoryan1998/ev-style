@@ -19,20 +19,8 @@ const prerenderedPreview = (): Plugin => ({
   },
 })
 
-/**
- * Public address of the site (canonical URLs, sitemap, link-preview images).
- * 1. SITE_URL env var if set (e.g. SITE_URL=https://evstyle.am)
- * 2. on Vercel: the production domain Vercel provides (your custom domain once added, else *.vercel.app)
- * 3. fallback for local builds
- */
-const SITE_URL = (
-  process.env.SITE_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:4173')
-).replace(/\/$/, '')
-
 export default defineConfig(({ isSsrBuild }) => ({
   plugins: [react(), prerenderedPreview()],
-  define: { __SITE_URL__: JSON.stringify(SITE_URL) },
   resolve: { alias: { '@': path.resolve(__dirname, 'src') } },
   server: { port: 3000, open: true },
   ssr: { noExternal: ['react-helmet-async'] },

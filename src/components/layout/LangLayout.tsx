@@ -9,6 +9,7 @@ import { Footer } from './Footer'
 import { MobileContactBar } from './MobileContactBar'
 import { SocialDock } from './SocialDock'
 import { Toast } from '@/components/ui/Toast'
+import { CookieConsent, TrackingDebugBadge } from './CookieConsent'
 
 const useIsoLayoutEffect = typeof window === 'undefined' ? useEffect : useLayoutEffect
 
@@ -27,7 +28,7 @@ export function LangLayout({ lang }: { lang: Lang }) {
   // Scroll to top on page change (but not on hash links)
   useEffect(() => {
     if (!hash) window.scrollTo(0, 0)
-    trackPageView(pathname)
+    trackPageView(pathname, lang)
   }, [pathname]) // eslint-disable-line react-hooks/exhaustive-deps
 
   // A returning visitor who picked ENG/РУС before lands on "/" → send them to their language (once per mount)
@@ -48,6 +49,8 @@ export function LangLayout({ lang }: { lang: Lang }) {
       <MobileContactBar />
       <SocialDock />
       <Toast />
+      <CookieConsent />
+      <TrackingDebugBadge />
     </>
   )
 }

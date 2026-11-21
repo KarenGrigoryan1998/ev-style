@@ -198,6 +198,13 @@
     "rights": "All rights reserved.",
     "disclaimer": "Deepal and Changan are trademarks of their respective owners. EVStyle is not an official dealer."
   },
+  "consent": {
+    "title": "Cookies",
+    "text": "We use cookies.",
+    "accept": "OK",
+    "necessary": "Only necessary",
+    "settings": "Cookie settings"
+  },
   "whatsapp": {
     "productWithModel": "Hello! I'm interested in: {{product}}. My car: {{model}}.",
     "product": "Hello! I'm interested in: {{product}}. My car: ",

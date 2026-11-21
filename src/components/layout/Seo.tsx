@@ -9,13 +9,16 @@ interface Props {
   /** Language-neutral path, e.g. '/', '/catalog' */
   path: string
   image?: string
+  /** Pixel size of `image` (default: the 1200×630 og-image.jpg) */
+  imageSize?: { width: number; height: number }
   jsonLd?: object | object[]
   noindex?: boolean
   /** Hero image to preload (LCP) — { href, srcSet, sizes } */
   preloadImage?: { href: string; srcSet?: string; sizes?: string }
 }
 
-export function Seo({ title, description, path, image = '/images/og-image.jpg', jsonLd, noindex, preloadImage }: Props) {
+export function Seo({ title, description, path, image = '/images/og-image.jpg', imageSize = { width: 1200, height: 630 }, jsonLd, noindex, preloadImage }: Props) {
+  const { metaDomainVerification, googleSiteVerification } = site.verification
   const { lang } = useLang()
   const url = canonical(lang, path)
   const img = image.startsWith('http') ? image : absoluteUrl(image)
@@ -30,6 +33,8 @@ export function Seo({ title, description, path, image = '/images/og-image.jpg', 
         <link key={a.hrefLang} rel="alternate" hrefLang={a.hrefLang} href={a.href} />
       ))}
       {noindex && <meta name="robots" content="noindex" />}
+      {metaDomainVerification && <meta name="facebook-domain-verification" content={metaDomainVerification} />}
+      {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
       {preloadImage && (
         <link rel="preload" as="image" type="image/webp" href={preloadImage.href} imageSrcSet={preloadImage.srcSet} imageSizes={preloadImage.sizes} {...{ fetchpriority: 'high' }} />
       )}
@@ -38,6 +43,8 @@ export function Seo({ title, description, path, image = '/images/og-image.jpg', 
       <meta property="og:description" content={description} />
       <meta property="og:url" content={url} />
       <meta property="og:image" content={img} />
+      <meta property="og:image:width" content={String(imageSize.width)} />
+      <meta property="og:image:height" content={String(imageSize.height)} />
       <meta property="og:locale" content={OG_LOCALE[lang]} />
       {ld.map((obj, i) => (
         <script key={i} type="application/ld+json">
