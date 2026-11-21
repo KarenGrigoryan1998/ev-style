@@ -1,0 +1,20 @@
+{
+  "$comment": "Car models, product categories and colour swatches. Used by the site, scripts/import-media.mjs and scripts/check-content.mjs. Every id here needs a translation: models.OTHER, categories.<id>, colors.<id> in src/locales/*.json.",
+  "models": [
+    { "id": "SL03", "name": "Deepal SL03", "type": "sedan" },
+    { "id": "S05", "name": "Deepal S05", "type": "suv" },
+    { "id": "S07", "name": "Deepal S07", "type": "suv" },
+    { "id": "OTHER", "name": "Other EV / Hybrid", "type": "other" }
+  ],
+  "categories": ["exterior", "lighting", "interior", "comfort", "protection", "maintenance"],
+  "colors": {
+    "black": "#16181D",
+    "silver": "linear-gradient(135deg,#f2f4f7,#9aa1ab)",
+    "white": "#F4F5F7",
+    "orange": "#E8743B",
+    "grey": "#8A8F98",
+    "purple": "#7A5C9E",
+    "blue": "#2F6FE0",
+    "red": "#D7373F"
+  }
+}

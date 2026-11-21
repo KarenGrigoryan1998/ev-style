@@ -1,0 +1,41 @@
+[
+  {
+    "id": "placeholder-1",
+    "placeholder": true,
+    "name": "Customer name",
+    "model": "S07",
+    "rating": 5,
+    "photo": null,
+    "text": {
+      "hy": "Այստեղ կլինի իրական հաճախորդի կարծիքը։ Փոխարինեք այս տեքստը src/data/reviews.json ֆայլում։",
+      "en": "A real customer review will appear here. Replace this text in src/data/reviews.json.",
+      "ru": "Здесь будет настоящий отзыв клиента. Замените этот текст в src/data/reviews.json."
+    }
+  },
+  {
+    "id": "placeholder-2",
+    "placeholder": true,
+    "name": "Customer name",
+    "model": "S05",
+    "rating": 5,
+    "photo": null,
+    "text": {
+      "hy": "Այստեղ կլինի իրական հաճախորդի կարծիքը։ Ավելացրեք նաև լուսանկար՝ ավելի շատ վստահության համար։",
+      "en": "A real customer review will appear here. Add a photo too — it builds even more trust.",
+      "ru": "Здесь будет настоящий отзыв клиента. Добавьте фото — это вызывает ещё больше доверия."
+    }
+  },
+  {
+    "id": "placeholder-3",
+    "placeholder": true,
+    "name": "Customer name",
+    "model": "SL03",
+    "rating": 5,
+    "photo": null,
+    "text": {
+      "hy": "Այստեղ կլինի իրական հաճախորդի կարծիքը։ Կարող եք օգտագործել Instagram-ի կամ Facebook-ի մեկնաբանությունները՝ հաճախորդի թույլտվությամբ։",
+      "en": "A real customer review will appear here. You can reuse Instagram or Facebook comments with the customer's permission.",
+      "ru": "Здесь будет настоящий отзыв клиента. Можно использовать комментарии из Instagram или Facebook с разрешения клиента."
+    }
+  }
+]

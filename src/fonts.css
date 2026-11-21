@@ -1,0 +1,12 @@
+/* Inter (Latin + Cyrillic) — browser downloads only the subsets a page uses */
+@import '@fontsource-variable/inter/wght.css';
+
+/* Noto Sans Armenian — Armenian glyphs only (Inter covers Latin/Cyrillic) */
+@font-face {
+  font-family: 'Noto Sans Armenian Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('../node_modules/@fontsource-variable/noto-sans-armenian/files/noto-sans-armenian-armenian-wght-normal.woff2') format('woff2-variations');
+  unicode-range: U+0308, U+0530-058F, U+2010, U+2024, U+25CC, U+FB13-FB17;
+}

@@ -1,0 +1,615 @@
+[
+  {
+    "id": "glowing-logo",
+    "slug": "glowing-deepal-logo",
+    "category": "exterior",
+    "models": [
+      "SL03",
+      "S05",
+      "S07"
+    ],
+    "price": 15000,
+    "priceOnRequest": false,
+    "status": "in_stock",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "black",
+      "silver"
+    ],
+    "images": [
+      "/images/products/glowing-logo/1",
+      "/images/products/glowing-logo/2",
+      "/images/products/glowing-logo/3",
+      "/images/products/glowing-logo/4",
+      "/images/products/glowing-logo/5"
+    ],
+    "video": "/videos/hero.mp4",
+    "name": {
+      "hy": "Լուսավորվող Deepal LED լոգո",
+      "en": "Glowing Deepal LED logo",
+      "ru": "Светящийся LED-логотип Deepal"
+    },
+    "description": {
+      "hy": "Լուսավորվող լոգո՝ Deepal-ի առջևի մասի համար։ Միանում է մեքենան միացնելիս և անջատվում՝ անջատելիս։ Գիշերը մեքենան անմիջապես առանձնանում է։ Տեղադրումը՝ ավտոէլեկտրիկի մոտ, մոտ 15–30 րոպե։",
+      "en": "An illuminated front emblem for your Deepal. Lights up when the car is switched on and turns off with it — your car stands out instantly at night. Installed by an auto electrician in about 15–30 minutes.",
+      "ru": "Светящаяся передняя эмблема для Deepal. Загорается при включении автомобиля и гаснет при выключении — ночью машина сразу выделяется. Установка у автоэлектрика, около 15–30 минут."
+    },
+    "featured": true
+  },
+  {
+    "id": "silicone-set",
+    "slug": "silicone-interior-set",
+    "category": "interior",
+    "models": [
+      "S05",
+      "S07"
+    ],
+    "price": 23000,
+    "priceOnRequest": false,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "orange",
+      "purple"
+    ],
+    "images": [
+      "/images/products/silicone-set/1",
+      "/images/products/silicone-set/2",
+      "/images/products/silicone-set/3",
+      "/images/products/silicone-set/4",
+      "/images/products/silicone-set/5"
+    ],
+    "name": {
+      "hy": "Սիլիկոնե սրահի ամբողջական հավաքածու",
+      "en": "Silicone interior set — full set",
+      "ru": "Силиконовый набор для салона — полный комплект"
+    },
+    "description": {
+      "hy": "Անլար լիցքավորման հարթակի, բաժակակալների և պահոցների ծածկեր՝ S05 և S07 մոդելների համար (ամբողջական հավաքածու)։ Գույներ՝ նարնջագույն և մանուշակագույն։ Չի սահում, չի աղմկում, հեշտ լվացվում է։",
+      "en": "Full set of mats for the wireless charging pad, cup holders and storage trays — for the S05 and S07. Orange and purple. Non-slip, no rattling, easy to wash.",
+      "ru": "Полный комплект ковриков для беспроводной зарядки, подстаканников и ниш — для S05 и S07. Оранжевый и фиолетовый. Не скользят, не гремят, легко моются."
+    },
+    "featured": true
+  },
+  {
+    "id": "leather-seat-set",
+    "slug": "leather-seat-covers-full-set",
+    "category": "comfort",
+    "models": [
+      "S05",
+      "S07"
+    ],
+    "price": 45000,
+    "priceOnRequest": false,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "orange",
+      "purple",
+      "black"
+    ],
+    "images": [
+      "/images/products/leather-seat-set/1",
+      "/images/products/leather-seat-set/2",
+      "/images/products/leather-seat-set/3",
+      "/images/products/leather-seat-set/4"
+    ],
+    "name": {
+      "hy": "Կաշվե նստատեղի ծածկոցներ — ամբողջ սրահ",
+      "en": "Leather seat covers — full interior",
+      "ru": "Кожаные чехлы — весь салон"
+    },
+    "description": {
+      "hy": "Կաշվե ծածկոցներ առջևի և հետևի նստատեղերի համար՝ S05 և S07 (2025/2026)։ Նարնջագույն, մանուշակագույն և սև։ Կարելի է պատվիրել նաև միայն առջևի 2 նստատեղի համար։",
+      "en": "Leather covers for front and rear seats — S05 and S07 (2025/2026). Orange, purple and black. Front-seats-only sets also available.",
+      "ru": "Кожаные чехлы на передние и задние сиденья — S05 и S07 (2025/2026). Оранжевые, фиолетовые и чёрные. Есть комплекты только на передние сиденья."
+    },
+    "featured": true
+  },
+  {
+    "id": "seat-cushions",
+    "slug": "headrest-pillows-deepal-logo",
+    "category": "comfort",
+    "models": [
+      "SL03",
+      "S05",
+      "S07",
+      "OTHER"
+    ],
+    "price": 8000,
+    "priceMax": 10000,
+    "priceOnRequest": false,
+    "status": "in_stock",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "orange",
+      "black",
+      "purple",
+      "grey"
+    ],
+    "images": [
+      "/images/products/seat-cushions/1",
+      "/images/products/seat-cushions/2",
+      "/images/products/seat-cushions/3",
+      "/images/products/seat-cushions/4",
+      "/images/products/seat-cushions/5"
+    ],
+    "name": {
+      "hy": "Գլխահենակի բարձեր Deepal լոգոյով",
+      "en": "Headrest pillows with Deepal logo",
+      "ru": "Подушки на подголовник с логотипом Deepal"
+    },
+    "description": {
+      "hy": "Փափուկ բարձեր պարանոցի համար՝ երկար ճանապարհներին հարմարավետության համար։ Մի քանի գույն՝ սրահի ոճին համապատասխան։",
+      "en": "Soft neck pillows for long-drive comfort. Several colours to match your interior.",
+      "ru": "Мягкие подушки под шею для комфорта в дальних поездках. Несколько цветов под ваш салон."
+    },
+    "featured": true
+  },
+  {
+    "id": "radiator-net",
+    "slug": "radiator-protective-net",
+    "category": "protection",
+    "models": [
+      "S07",
+      "S05",
+      "SL03"
+    ],
+    "price": 16000,
+    "priceMax": 21000,
+    "priceOnRequest": false,
+    "status": "in_stock",
+    "freeInstallation": true,
+    "isNew": true,
+    "colors": [],
+    "images": [
+      "/images/products/radiator-net/1",
+      "/images/products/radiator-net/2",
+      "/images/products/radiator-net/3",
+      "/images/products/radiator-net/4",
+      "/images/products/radiator-net/5"
+    ],
+    "name": {
+      "hy": "Ռադիատորի պաշտպանիչ ցանց",
+      "en": "Radiator protective net",
+      "ru": "Защитная сетка радиатора"
+    },
+    "description": {
+      "hy": "Պաշտպանում է ռադիատորը քարերից, միջատներից և աղբից։ Տարբերակներ՝ S07 EV, S07 HEV, S05 և SL03։ Գինը կախված է մոդելից։ Տեղադրումը՝ անվճար։",
+      "en": "Protects the radiator from stones, insects and debris. Versions for S07 EV, S07 HEV, S05 and SL03 — price depends on the model. Installation is free.",
+      "ru": "Защищает радиатор от камней, насекомых и мусора. Версии для S07 EV, S07 HEV, S05 и SL03 — цена зависит от модели. Установка бесплатно."
+    },
+    "featured": true,
+    "variants": [
+      {
+        "id": "glossy",
+        "name": {
+          "hy": "Փայլուն սև",
+          "en": "Glossy black",
+          "ru": "Глянцевый чёрный"
+        }
+      },
+      {
+        "id": "matte",
+        "name": {
+          "hy": "Մատ սև",
+          "en": "Matte black",
+          "ru": "Матовый чёрный"
+        }
+      }
+    ]
+  },
+  {
+    "id": "trunk-cover",
+    "slug": "leather-trunk-cover",
+    "category": "interior",
+    "models": [
+      "S05",
+      "S07"
+    ],
+    "price": 35000,
+    "priceMax": 45000,
+    "priceOnRequest": false,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "orange",
+      "purple",
+      "black"
+    ],
+    "images": [
+      "/images/products/trunk-cover/1",
+      "/images/products/trunk-cover/2",
+      "/images/products/trunk-cover/3",
+      "/images/products/trunk-cover/4"
+    ],
+    "name": {
+      "hy": "Բեռնախցիկի կաշվե վարագույր",
+      "en": "Leather trunk cover",
+      "ru": "Кожаная шторка багажника"
+    },
+    "description": {
+      "hy": "Կաշվե վարագույր՝ բեռնախցիկը թաքցնելու համար։ S05 2024–27 և S07 2025/2026։ Գույներ՝ նարնջագույն, մանուշակագույն և սև։",
+      "en": "Leather cover that hides the luggage area. For S05 2024–27 and S07 2025/2026. Orange, purple and black.",
+      "ru": "Кожаная шторка, скрывающая багажник. Для S05 2024–27 и S07 2025/2026. Оранжевая, фиолетовая и чёрная."
+    },
+    "featured": true
+  },
+  {
+    "id": "steering-cover",
+    "slug": "steering-wheel-cover",
+    "category": "interior",
+    "models": [
+      "SL03",
+      "S05",
+      "S07"
+    ],
+    "price": null,
+    "priceOnRequest": true,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": false,
+    "colors": [
+      "orange",
+      "purple"
+    ],
+    "images": [
+      "/images/products/steering-cover/1",
+      "/images/products/steering-cover/2",
+      "/images/products/steering-cover/3"
+    ],
+    "name": {
+      "hy": "Ղեկի ծածկ",
+      "en": "Steering wheel cover",
+      "ru": "Оплётка руля"
+    },
+    "description": {
+      "hy": "Ղեկի ծածկ՝ Deepal-ի սրահի գույներով։ Հարմար բռնվածք և պաշտպանություն մաշվածությունից։",
+      "en": "A steering wheel cover in Deepal interior colours. Comfortable grip and protection from wear.",
+      "ru": "Оплётка руля в цветах салона Deepal. Удобный хват и защита от износа."
+    },
+    "featured": true
+  },
+  {
+    "id": "cabin-filter",
+    "slug": "cabin-air-filter",
+    "category": "maintenance",
+    "models": [
+      "SL03",
+      "S05",
+      "S07"
+    ],
+    "price": 5000,
+    "priceOnRequest": false,
+    "status": "in_stock",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [],
+    "images": [
+      "/images/products/cabin-filter/1",
+      "/images/products/cabin-filter/2"
+    ],
+    "name": {
+      "hy": "Սրահի օդի ֆիլտր",
+      "en": "Cabin air filter",
+      "ru": "Салонный фильтр"
+    },
+    "description": {
+      "hy": "Սրահի օդի ֆիլտր՝ 2 տարբերակով․ «Արոմաթերապիա»՝ գործարանային ստանդարտ տարբերակը, և «Հակաբակտերիալ»՝ արծաթի իոններով (Ag+), լրացուցիչ պաշտպանությամբ բակտերիաներից։ Խորհուրդ է տրվում փոխել տարին մեկ անգամ կամ 10–15 հազար կմ-ը մեկ։",
+      "en": "Cabin air filter in 2 types: Aromatherapy — the factory standard type, and Antibacterial with silver ions (Ag+) for extra protection against bacteria. Recommended to replace once a year or every 10–15 thousand km.",
+      "ru": "Салонный фильтр в 2 вариантах: «Ароматерапия» — заводской стандартный тип, и «Антибактериальный» с ионами серебра (Ag+) — дополнительная защита от бактерий. Рекомендуется менять раз в год или каждые 10–15 тыс. км."
+    },
+    "featured": true,
+    "variants": [
+      {
+        "id": "aroma",
+        "name": {
+          "hy": "Արոմաթերապիա",
+          "en": "Aromatherapy",
+          "ru": "Ароматерапия"
+        },
+        "note": {
+          "hy": "Գործարանային ստանդարտ տարբերակ",
+          "en": "Factory standard type",
+          "ru": "Заводской стандартный тип"
+        }
+      },
+      {
+        "id": "silver",
+        "name": {
+          "hy": "Հակաբակտերիալ՝ արծաթի իոններով (Ag+)",
+          "en": "Antibacterial with silver ions (Ag+)",
+          "ru": "Антибактериальный с ионами серебра (Ag+)"
+        },
+        "note": {
+          "hy": "Լրացուցիչ պաշտպանություն բակտերիաներից",
+          "en": "Extra protection against bacteria",
+          "ru": "Дополнительная защита от бактерий"
+        }
+      }
+    ]
+  },
+  {
+    "id": "glasses-holder",
+    "slug": "magnetic-glasses-holder",
+    "category": "interior",
+    "models": [
+      "SL03",
+      "S05",
+      "S07",
+      "OTHER"
+    ],
+    "price": 4000,
+    "priceOnRequest": false,
+    "status": "in_stock",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "orange",
+      "purple",
+      "black",
+      "grey"
+    ],
+    "images": [
+      "/images/products/glasses-holder/1",
+      "/images/products/glasses-holder/2"
+    ],
+    "name": {
+      "hy": "Ակնոցի մագնիսական բռնակ",
+      "en": "Magnetic glasses holder",
+      "ru": "Магнитный держатель для очков"
+    },
+    "description": {
+      "hy": "Կաշվե մագնիսական բռնակ՝ արևապաշտպան հովարին ամրացնելու համար, Deepal լոգոյով։ Գույները՝ սրահի գույներին համապատասխան։ Ակնոցը միշտ ձեռքի տակ է և չի ընկնում։",
+      "en": "Leather magnetic clip for the sun visor with the Deepal logo, in colours that match Deepal interiors. Your glasses stay within reach and don't fall.",
+      "ru": "Кожаный магнитный держатель на солнцезащитный козырёк с логотипом Deepal, в цветах салона Deepal. Очки всегда под рукой и не падают."
+    },
+    "featured": false
+  },
+  {
+    "id": "seat-covers",
+    "slug": "alcantara-seat-covers",
+    "category": "comfort",
+    "models": [
+      "SL03",
+      "S05",
+      "S07"
+    ],
+    "price": 20000,
+    "priceOnRequest": false,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": false,
+    "colors": [
+      "orange",
+      "grey"
+    ],
+    "images": [
+      "/images/products/seat-covers/1",
+      "/images/products/seat-covers/2",
+      "/images/products/seat-covers/3",
+      "/images/products/seat-covers/4"
+    ],
+    "name": {
+      "hy": "Ալկանտարա նստատեղի ծածկոցներ (առջևի 2 նստատեղ)",
+      "en": "Alcantara seat covers (2 front seats)",
+      "ru": "Чехлы из алькантары (2 передних сиденья)"
+    },
+    "description": {
+      "hy": "Փափուկ ալկանտարա՝ Deepal-ի առջևի նստատեղերի համար։ Պաշտպանում է բնօրինակ պաստառը և ավելացնում հարմարավետություն։ Ամբողջ սրահի տարբերակը՝ ըստ պահանջի։",
+      "en": "Soft Alcantara covers for the front Deepal seats. Protect the original upholstery and add comfort. Full-interior sets available on request.",
+      "ru": "Мягкие чехлы из алькантары для передних сидений Deepal. Защищают родную обивку и добавляют комфорт. Комплект на весь салон — по запросу."
+    },
+    "featured": false
+  },
+  {
+    "id": "leg-rest-set",
+    "slug": "seat-covers-with-leg-rest",
+    "category": "comfort",
+    "models": [
+      "S05",
+      "S07"
+    ],
+    "price": 25000,
+    "priceOnRequest": false,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": false,
+    "colors": [
+      "orange",
+      "black"
+    ],
+    "images": [
+      "/images/products/leg-rest-set/1",
+      "/images/products/leg-rest-set/2",
+      "/images/products/leg-rest-set/3",
+      "/images/products/leg-rest-set/4"
+    ],
+    "name": {
+      "hy": "Առջևի նստատեղերի ծածկոցներ՝ ոտքերի հենարանով",
+      "en": "Front seat covers with leg-rest cover",
+      "ru": "Чехлы на передние сиденья с подножкой"
+    },
+    "description": {
+      "hy": "Առջևի 2 նստատեղի ծածկոցներ՝ ուղևորի ոտքերի հենարանի ծածկով։ Ամրագոտին՝ դռան կողմից։ Նշեք մոդելը և տարեթիվը՝ ճիշտ տարբերակի համար։",
+      "en": "Covers for the 2 front seats, including a cover for the passenger leg rest. Seat-belt side matched for left-hand drive. Send your model and year for the right version.",
+      "ru": "Чехлы на 2 передних сиденья с чехлом на подножку пассажира. Под левый руль. Напишите модель и год — подберём версию."
+    },
+    "featured": false
+  },
+  {
+    "id": "soft-seat-set",
+    "slug": "soft-seat-covers-full-set",
+    "category": "comfort",
+    "models": [
+      "SL03",
+      "S05",
+      "S07"
+    ],
+    "price": null,
+    "priceOnRequest": true,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": false,
+    "colors": [
+      "orange",
+      "black"
+    ],
+    "images": [
+      "/images/products/soft-seat-set/1",
+      "/images/products/soft-seat-set/2",
+      "/images/products/soft-seat-set/3",
+      "/images/products/soft-seat-set/4"
+    ],
+    "name": {
+      "hy": "Փափուկ նստատեղի ծածկոցներ — ամբողջ սրահ",
+      "en": "Soft seat covers — full interior",
+      "ru": "Мягкие чехлы — весь салон"
+    },
+    "description": {
+      "hy": "Փափուկ, շնչող ծածկոցներ Deepal-ի լոգոյով՝ SL03, S05 և S07 մոդելների համար։ Հարմարավետ ամեն եղանակին։",
+      "en": "Soft, breathable covers with the Deepal logo for SL03, S05 and S07. Comfortable in any season.",
+      "ru": "Мягкие дышащие чехлы с логотипом Deepal для SL03, S05 и S07. Комфортны в любое время года."
+    },
+    "featured": false
+  },
+  {
+    "id": "tissue-box",
+    "slug": "seat-back-tissue-box",
+    "category": "interior",
+    "models": [
+      "SL03",
+      "S05",
+      "S07",
+      "OTHER"
+    ],
+    "price": 7500,
+    "priceOnRequest": false,
+    "status": "in_stock",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "orange"
+    ],
+    "images": [
+      "/images/products/tissue-box/1",
+      "/images/products/tissue-box/2",
+      "/images/products/tissue-box/3"
+    ],
+    "name": {
+      "hy": "Անձեռոցիկների տուփ նստատեղի հետևում",
+      "en": "Seat-back tissue box with logo",
+      "ru": "Салфетница на спинку сиденья"
+    },
+    "description": {
+      "hy": "Ամրացվում է նստատեղի հետևի մասին՝ անձեռոցիկները միշտ ձեռքի տակ են հետևի ուղևորների համար։",
+      "en": "Mounts on the back of the front seat so rear passengers always have tissues within reach.",
+      "ru": "Крепится на спинку переднего сиденья — салфетки всегда под рукой у задних пассажиров."
+    },
+    "featured": false
+  },
+  {
+    "id": "pedals",
+    "slug": "aluminium-pedals-logo",
+    "category": "interior",
+    "models": [
+      "SL03",
+      "S05",
+      "S07"
+    ],
+    "price": 9000,
+    "priceOnRequest": false,
+    "status": "in_stock",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "silver",
+      "black",
+      "blue",
+      "red"
+    ],
+    "images": [
+      "/images/products/pedals/1",
+      "/images/products/pedals/2",
+      "/images/products/pedals/3",
+      "/images/products/pedals/4"
+    ],
+    "name": {
+      "hy": "Ալյումինե ոտնակներ լոգոյով",
+      "en": "Aluminium pedals with logo",
+      "ru": "Алюминиевые педали с логотипом"
+    },
+    "description": {
+      "hy": "Ալյումինե ոտնակների ծածկեր՝ հակասահող ռետինե շերտով։ Սպորտային տեսք և լավ կառավարում։",
+      "en": "Aluminium pedal covers with anti-slip rubber inserts. A sporty look and better grip.",
+      "ru": "Алюминиевые накладки на педали с антискользящими резиновыми вставками. Спортивный вид и лучшее сцепление."
+    },
+    "featured": false
+  },
+  {
+    "id": "wiper-blades",
+    "slug": "wiper-blades",
+    "category": "maintenance",
+    "models": [
+      "SL03",
+      "S05",
+      "S07"
+    ],
+    "price": null,
+    "priceOnRequest": true,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": false,
+    "colors": [],
+    "images": [
+      "/images/products/wiper-blades/1",
+      "/images/products/wiper-blades/2"
+    ],
+    "name": {
+      "hy": "Ապակեմաքրիչի խոզանակներ",
+      "en": "Wiper blades",
+      "ru": "Щётки стеклоочистителя"
+    },
+    "description": {
+      "hy": "Ապակեմաքրիչի խոզանակներ՝ Ձեր մոդելի համար նախատեսված ամրակով։ Բնական ռետին, SK5 պողպատե շերտ և աերոդինամիկ ուղղորդող թիթեղ՝ մաքուր ապակի առանց աղմուկի։ Գրեք մեզ մոդելը և տարեթիվը՝ ճիշտ չափի համար։",
+      "en": "Wiper blades with a mount made for your model. Natural rubber, SK5 steel strip and an aerodynamic guide plate for a clean, quiet wipe. Send us your model and year for the right size.",
+      "ru": "Щётки стеклоочистителя с креплением под вашу модель. Натуральная резина, стальная пластина SK5 и аэродинамический спойлер — чисто и тихо. Напишите модель и год, чтобы подобрать размер."
+    },
+    "featured": false
+  },
+  {
+    "id": "screen-storage-box",
+    "slug": "behind-screen-storage-box",
+    "category": "interior",
+    "models": [
+      "S05",
+      "S07"
+    ],
+    "price": null,
+    "priceOnRequest": true,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "black"
+    ],
+    "images": [],
+    "name": {
+      "hy": "Էկրանի հետևի պահոց",
+      "en": "Behind-screen storage box",
+      "ru": "Органайзер за экраном"
+    },
+    "description": {
+      "hy": "Պահոց կենտրոնական էկրանի հետևում՝ հեռախոսի, բանալիների և մանր իրերի համար։",
+      "en": "A storage box behind the central screen for your phone, keys and small items.",
+      "ru": "Органайзер за центральным экраном для телефона, ключей и мелочей."
+    },
+    "featured": false,
+    "hidden": true
+  }
+]

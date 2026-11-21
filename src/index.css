@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-night-900 font-sans text-mist-100;
+    text-rendering: optimizeLegibility;
+  }
+  /* Armenian script reads better with a little more line height */
+  :lang(hy) body { line-height: 1.6; }
+  ::selection { @apply bg-ev/30 text-white; }
+  :focus-visible { @apply outline-none ring-2 ring-ev ring-offset-2 ring-offset-night-900; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+}
+
+@layer components {
+  .section { @apply relative py-16 sm:py-24; }
+  .glass {
+    @apply border border-white/[0.07] bg-white/[0.035] backdrop-blur-xl;
+  }
+  .card {
+    @apply rounded-2xl border border-white/[0.06] bg-night-850 shadow-card;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-ev-300 via-ev to-ev-600 bg-clip-text text-transparent;
+  }
+  .glow-line {
+    background: linear-gradient(90deg, transparent, rgba(113, 219, 61, 0.7), transparent);
+  }
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+}
+
+/* Leave room for the mobile contact bar */
+@media (max-width: 767px) {
+  body { padding-bottom: calc(4.25rem + env(safe-area-inset-bottom)); }
+}

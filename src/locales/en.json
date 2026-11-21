@@ -1,0 +1,244 @@
+{
+  "meta": {
+    "title": "EVStyle Armenia — Deepal & EV accessories in Yerevan",
+    "description": "Accessories for Deepal SL03, S05, S07 and other electric and hybrid cars. Pre-order with 10% off. Free delivery in Arabkir, in Yerevan from {{freeFrom}}.",
+    "catalogTitle": "Catalogue — EVStyle Armenia",
+    "notFoundTitle": "Page not found — EVStyle Armenia"
+  },
+  "nav": {
+    "products": "Products",
+    "howToOrder": "How to order",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "skip": "Skip to content",
+    "catalog": "Catalogue"
+  },
+  "common": {
+    "order": "Order",
+    "details": "Details",
+    "call": "Call",
+    "back": "Back",
+    "onlineStore": "Online store · Yerevan",
+    "language": "Language",
+    "priceAsk": "Price — message us",
+    "socials": "Our pages",
+    "writeUs": "Message us",
+    "orderMessenger": "Order via Messenger",
+    "orWhatsApp": "or WhatsApp",
+    "messageCopied": "Message copied — paste it in Messenger"
+  },
+  "badges": {
+    "preorder": "Pre-order −{{percent}}%",
+    "freeInstallation": "Free installation",
+    "new": "New"
+  },
+  "colors": {
+    "label": "Colours",
+    "black": "Black",
+    "silver": "Silver",
+    "white": "White",
+    "orange": "Orange",
+    "grey": "Grey",
+    "purple": "Purple",
+    "blue": "Blue",
+    "red": "Red"
+  },
+  "categories": {
+    "all": "All",
+    "exterior": "Exterior",
+    "lighting": "Lighting",
+    "interior": "Interior",
+    "comfort": "Comfort",
+    "protection": "Protection",
+    "maintenance": "Maintenance"
+  },
+  "models": {
+    "OTHER": "Other EV / Hybrid",
+    "OTHER_short": "Other EV"
+  },
+  "hero": {
+    "eyebrow": "Deepal · Changan · EV & hybrid",
+    "title": "Make your EV look and feel premium",
+    "subtitle": "Accessories for electric and hybrid cars in Armenia — direct from verified factories. Pick up or get it delivered.",
+    "ctaPrimary": "Choose accessories",
+    "ctaSecondary": "Message us on Facebook",
+    "videoLabel": "Glowing Deepal logo at night"
+  },
+  "trust": {
+    "delivery": "Free delivery in Arabkir, in Yerevan from {{freeFrom}}",
+    "installation": "Free installation on selected items",
+    "preorder": "{{percent}}% off pre-orders",
+    "photos": "Real photos & video before you buy"
+  },
+  "products": {
+    "eyebrow": "Most popular",
+    "title": "Popular products",
+    "subtitle": "Prices in AMD. Pre-order and save {{percent}}%.",
+    "compatible": "Fits",
+    "noPhoto": "Photo coming soon",
+    "subtitleNoPrices": "Message us on any platform you like for prices and availability. Pre-order and save {{percent}}%."
+  },
+  "howTo": {
+    "eyebrow": "Simple and transparent",
+    "title": "How ordering works",
+    "subtitle": "Four simple steps. Everything is arranged by message — no complications.",
+    "steps": {
+      "s1": {
+        "title": "Choose the product",
+        "text": "Pick the accessory and your car model."
+      },
+      "s2": {
+        "title": "Message us",
+        "text": "On Facebook Messenger or Instagram. We'll confirm fit, price and availability."
+      },
+      "s3": {
+        "title": "In stock or pre-order",
+        "text": "In stock: delivered in {{days}} days. Pre-order: about {{weeks}} weeks, {{percent}}% off."
+      },
+      "s4": {
+        "title": "Receive it",
+        "text": "Free delivery in Arabkir, in Yerevan from {{freeFrom}}, or pick up. Free installation on selected items."
+      }
+    }
+  },
+  "why": {
+    "eyebrow": "Why EVStyle",
+    "title": "Trust you can check",
+    "items": {
+      "fit": {
+        "title": "Made for your exact model",
+        "text": "We match the version to your model and year so everything fits."
+      },
+      "photos": {
+        "title": "What you see is what you get",
+        "text": "We send real photos and video of the item before you buy."
+      },
+      "prices": {
+        "title": "Fair prices",
+        "text": "Direct from factories, no middlemen. The same price for everyone."
+      },
+      "help": {
+        "title": "Help with installation",
+        "text": "We help you choose the right version and install selected items for free."
+      },
+      "replies": {
+        "title": "Fast replies",
+        "text": "Facebook, Instagram, WhatsApp — quick answers in Armenian, English or Russian."
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "In the car",
+    "title": "See how it looks",
+    "subtitle": "Photos and short videos. More on our Facebook, Instagram and TikTok.",
+    "more": "More on our pages",
+    "videoFollow": "EVStyle — new arrivals",
+    "videoLogo": "Glowing logo",
+    "photoAlt": "EVStyle accessory in the car {{n}}"
+  },
+  "reviews": {
+    "eyebrow": "Customer reviews",
+    "title": "Reviews",
+    "subtitle": "Honest feedback from our customers.",
+    "leave": "Leave a review on Facebook",
+    "stars": "{{count}} out of 5 stars",
+    "anonymous": "{{model}} owner"
+  },
+  "faq": {
+    "eyebrow": "Frequently asked",
+    "title": "Questions & answers",
+    "more": "Didn't find the answer? Write to us",
+    "items": {
+      "preorderTime": {
+        "q": "How long does a pre-order take?",
+        "a": "Usually about {{weeks}} weeks. Pre-orders get {{percent}}% off, and you pay when you receive the item. We'll contact you as soon as it arrives in Armenia."
+      },
+      "installation": {
+        "q": "Do you install the accessories?",
+        "a": "Yes — items marked \"Free installation\" are installed for free. For other items we'll advise you or refer you to a trusted specialist (for example, the LED logo is connected by an auto electrician in about 15–30 minutes)."
+      },
+      "fit": {
+        "q": "How do I know it fits my car / year?",
+        "a": "Send us your car model and year (e.g. S07 2025 or 2026, EV or hybrid). We'll check and suggest the right version before you order."
+      },
+      "deliveryPayment": {
+        "q": "Delivery and payment options",
+        "a": "Delivery within Arabkir district is free. Elsewhere in Yerevan delivery is free for orders from {{freeFrom}}. You can also pick up by appointment. Payment in cash or by bank transfer when you receive the item."
+      },
+      "returns": {
+        "q": "Can I return or exchange?",
+        "a": "If the item doesn't fit or has a manufacturing defect, write to us and we'll sort it out with an exchange or refund. The item must be unused and in its original packaging."
+      }
+    }
+  },
+  "follow": {
+    "eyebrow": "Stay in touch",
+    "title": "Follow us",
+    "subtitle": "Follow to see new arrivals and special offers first.",
+    "cta": "Follow",
+    "instagram": "Photos, stories and new arrivals",
+    "facebook": "News, discounts and orders",
+    "tiktok": "Short videos of how it really looks"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Write to us — we reply fast",
+    "subtitle": "Tell us your car model and year and we'll tell you the right version and price straight away.",
+    "address": "Pickup address",
+    "hours": "Working hours",
+    "note": "We're an online store — pickup by appointment.",
+    "openMap": "Open in Google Maps",
+    "mapTitle": "EVStyle pickup point on the map"
+  },
+  "footer": {
+    "tagline": "Accessories for Deepal and other electric and hybrid cars in Armenia.",
+    "rights": "All rights reserved.",
+    "disclaimer": "Deepal and Changan are trademarks of their respective owners. EVStyle is not an official dealer."
+  },
+  "whatsapp": {
+    "productWithModel": "Hello! I'm interested in: {{product}}. My car: {{model}}.",
+    "product": "Hello! I'm interested in: {{product}}. My car: ",
+    "general": "Hello! I have a question about accessories. My car: "
+  },
+  "catalog": {
+    "title": "Catalogue",
+    "subtitle": "Choose your model and category to find accessories for your car.",
+    "model": "Model",
+    "category": "Category",
+    "all": "All",
+    "search": "Search…",
+    "sort": "Sort",
+    "sortFeatured": "Featured",
+    "sortPriceAsc": "Price: low to high",
+    "sortPriceDesc": "Price: high to low",
+    "results": "{{count}} products",
+    "empty": "Nothing on the site matches these filters — but we may still have it or can order it. Message us."
+  },
+  "product": {
+    "compatibleModels": "Compatible models",
+    "deliveryPreorder": "Pre-order — about {{weeks}} weeks, {{percent}}% off",
+    "freeDelivery": "Free delivery in Arabkir, in Yerevan from {{freeFrom}}",
+    "related": "You may also like",
+    "video": "Video",
+    "deliveryAsk": "Ask us about availability — items in stock are delivered in {{days}} days",
+    "type": "Type"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The link may be wrong or the page has moved.",
+    "cta": "Go to home page"
+  },
+  "moreProducts": {
+    "title": "Not every product is listed here",
+    "text": "Our range is bigger and updated all the time. Message us to find out about all products available now or on pre-order for your car.",
+    "ctaMessenger": "Ask on Messenger"
+  },
+  "catalogCta": {
+    "title": "Full catalogue",
+    "text": "All accessories with filters by model and category. Pick your car:",
+    "cta": "Open catalogue"
+  }
+}
