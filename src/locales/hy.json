@@ -23,7 +23,7 @@
     "back": "Հետ",
     "onlineStore": "Առցանց խանութ · Հայաստան",
     "language": "Լեզու",
-    "priceAsk": "Գինը՝ գրեք մեզ",
+    "priceAsk": "Հարցնել գինը",
     "socials": "Մեր էջերը",
     "writeUs": "Գրել մեզ",
     "orderMessenger": "Պատվիրել Messenger-ով",
@@ -31,7 +31,7 @@
     "messageCopied": "Հաղորդագրությունը պատճենվեց․ տեղադրեք այն Messenger-ում"
   },
   "badges": {
-    "preorder": "Նախապատվեր −{{percent}}%",
+    "preorder": "Ակցիա −{{percent}}%",
     "freeInstallation": "Անվճար տեղադրում",
     "new": "Նոր"
   },

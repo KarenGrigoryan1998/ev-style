@@ -10,7 +10,7 @@
     ],
     "price": 15000,
     "priceOnRequest": false,
-    "status": "in_stock",
+    "status": "preorder",
     "freeInstallation": false,
     "isNew": true,
     "colors": [
@@ -42,6 +42,7 @@
     "slug": "silicone-interior-set",
     "category": "interior",
     "models": [
+      "SL03",
       "S05",
       "S07"
     ],
@@ -52,14 +53,17 @@
     "isNew": true,
     "colors": [
       "orange",
-      "purple"
+      "purple",
+      "black"
     ],
     "images": [
       "/images/products/silicone-set/1",
       "/images/products/silicone-set/2",
       "/images/products/silicone-set/3",
       "/images/products/silicone-set/4",
-      "/images/products/silicone-set/5"
+      "/images/products/silicone-set/5",
+      "/images/products/silicone-set/6",
+      "/images/products/silicone-set/7"
     ],
     "name": {
       "hy": "Սիլիկոնե սրահի ամբողջական հավաքածու",
@@ -67,9 +71,9 @@
       "ru": "Силиконовый набор для салона — полный комплект"
     },
     "description": {
-      "hy": "Անլար լիցքավորման հարթակի, բաժակակալների և պահոցների ծածկեր՝ S05 և S07 մոդելների համար (ամբողջական հավաքածու)։ Գույներ՝ նարնջագույն և մանուշակագույն։ Չի սահում, չի աղմկում, հեշտ լվացվում է։",
-      "en": "Full set of mats for the wireless charging pad, cup holders and storage trays — for the S05 and S07. Orange and purple. Non-slip, no rattling, easy to wash.",
-      "ru": "Полный комплект ковриков для беспроводной зарядки, подстаканников и ниш — для S05 и S07. Оранжевый и фиолетовый. Не скользят, не гремят, легко моются."
+      "hy": "Անլար լիցքավորման հարթակի, բաժակակալների և պահոցների ծածկեր՝ SL03, S05 և S07 մոդելների համար (ամբողջական հավաքածու)։ Գույներ՝ նարնջագույն, մանուշակագույն և սև (SL03-ի համար)։ Չի սահում, չի աղմկում, հեշտ լվացվում է։",
+      "en": "Full set of mats for the wireless charging pad, cup holders and storage trays — for the SL03, S05 and S07. Orange, purple and black (SL03). Non-slip, no rattling, easy to wash.",
+      "ru": "Полный комплект ковриков для беспроводной зарядки, подстаканников и ниш — для SL03, S05 и S07. Оранжевый, фиолетовый и чёрный (SL03). Не скользят, не гремят, легко моются."
     },
     "featured": true
   },
@@ -122,7 +126,7 @@
     "price": 8000,
     "priceMax": 10000,
     "priceOnRequest": false,
-    "status": "in_stock",
+    "status": "preorder",
     "freeInstallation": false,
     "isNew": true,
     "colors": [
@@ -162,7 +166,7 @@
     "price": 16000,
     "priceMax": 21000,
     "priceOnRequest": false,
-    "status": "in_stock",
+    "status": "preorder",
     "freeInstallation": true,
     "isNew": true,
     "colors": [],
@@ -170,8 +174,7 @@
       "/images/products/radiator-net/1",
       "/images/products/radiator-net/2",
       "/images/products/radiator-net/3",
-      "/images/products/radiator-net/4",
-      "/images/products/radiator-net/5"
+      "/images/products/radiator-net/4"
     ],
     "name": {
       "hy": "Ռադիատորի պաշտպանիչ ցանց",
@@ -286,7 +289,7 @@
     ],
     "price": 5000,
     "priceOnRequest": false,
-    "status": "in_stock",
+    "status": "preorder",
     "freeInstallation": false,
     "isNew": true,
     "colors": [],
@@ -346,7 +349,7 @@
     ],
     "price": 4000,
     "priceOnRequest": false,
-    "status": "in_stock",
+    "status": "preorder",
     "freeInstallation": false,
     "isNew": true,
     "colors": [
@@ -490,7 +493,7 @@
     ],
     "price": 7500,
     "priceOnRequest": false,
-    "status": "in_stock",
+    "status": "preorder",
     "freeInstallation": false,
     "isNew": true,
     "colors": [
@@ -524,7 +527,7 @@
     ],
     "price": 9000,
     "priceOnRequest": false,
-    "status": "in_stock",
+    "status": "preorder",
     "freeInstallation": false,
     "isNew": true,
     "colors": [
@@ -611,5 +614,110 @@
     },
     "featured": false,
     "hidden": true
+  },
+  {
+    "id": "anti-kick-pad",
+    "slug": "rear-seat-anti-kick-pad",
+    "category": "interior",
+    "models": [
+      "S05",
+      "S07"
+    ],
+    "price": null,
+    "priceOnRequest": true,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "orange",
+      "purple"
+    ],
+    "images": [
+      "/images/products/anti-kick-pad/1",
+      "/images/products/anti-kick-pad/2",
+      "/images/products/anti-kick-pad/3",
+      "/images/products/anti-kick-pad/4",
+      "/images/products/anti-kick-pad/5"
+    ],
+    "name": {
+      "hy": "Առջևի նստատեղերի թիկունքի պաշտպանիչ պահոց",
+      "en": "Front seat-back anti-kick protector",
+      "ru": "Защитная накладка на спинку переднего сиденья"
+    },
+    "description": {
+      "hy": "Փափուկ կափարիչ՝ առջևի նստատեղերի հետնամասի կոնսոլի համար, պաշտպանում է հետևի ուղևորների ոտքերի հարվածներից և քերծվածքներից։ Դյուրակիր տեղադրում, առանց գործիքների։ Գույներ՝ նարնջագույն և մանուշակագույն։",
+      "en": "A soft cover for the back of the front-seat console, protecting it from rear passengers' feet — no more scuffs or kicks. Easy, tool-free fit. Orange and purple.",
+      "ru": "Мягкий чехол на заднюю часть консоли передних сидений — защищает от ударов и царапин ногами задних пассажиров. Лёгкая установка без инструментов. Оранжевый и фиолетовый."
+    },
+    "featured": false
+  },
+  {
+    "id": "fridge-silicone-pad",
+    "slug": "fridge-silicone-pad",
+    "category": "interior",
+    "models": [
+      "S07",
+      "S09"
+    ],
+    "price": null,
+    "priceOnRequest": true,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "white"
+    ],
+    "images": [
+      "/images/products/fridge-silicone-pad/1",
+      "/images/products/fridge-silicone-pad/2",
+      "/images/products/fridge-silicone-pad/3"
+    ],
+    "name": {
+      "hy": "Սիլիկոնե միջադիր՝ սառնարանի համար",
+      "en": "Silicone pad for the built-in fridge",
+      "ru": "Силиконовая подкладка для встроенного холодильника"
+    },
+    "description": {
+      "hy": "Սիլիկոնե միջադիր՝ S07 և S09 մոդելների ներկառուցված սառնարանի խցի համար։",
+      "en": "A silicone pad for the built-in fridge compartment on the S07 and S09.",
+      "ru": "Силиконовая подкладка для отсека встроенного холодильника на S07 и S09."
+    },
+    "featured": false
+  },
+  {
+    "id": "window-button-covers",
+    "slug": "window-switch-button-covers",
+    "category": "interior",
+    "models": [
+      "SL03",
+      "S05",
+      "S07"
+    ],
+    "price": null,
+    "priceOnRequest": true,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "orange",
+      "purple"
+    ],
+    "images": [
+      "/images/products/window-button-covers/1",
+      "/images/products/window-button-covers/2",
+      "/images/products/window-button-covers/3",
+      "/images/products/window-button-covers/4"
+    ],
+    "name": {
+      "hy": "Պատուհանի կոճակների սիլիկոնե ծածկեր",
+      "en": "Window switch button silicone covers",
+      "ru": "Силиконовые накладки на кнопки стеклоподъёмников"
+    },
+    "description": {
+      "hy": "Սիլիկոնե ծածկեր դռան պատուհանի կոճակների համար՝ 4 հատանոց հավաքածու (վարորդի տախտակ + 3 ուղևորի դուռ)։ Պաշտպանում է քերծվածքներից և մաշվածությունից, հեշտությամբ տեղադրվում է առանց սոսինձի։ Գույներ՝ նարնջագույն և մանուշակագույն։",
+      "en": "Silicone covers for the door window-switch buttons — a 4-piece set (driver panel + 3 passenger doors). Protects against scratches and wear, fits on without glue. Orange and purple.",
+      "ru": "Силиконовые накладки на кнопки стеклоподъёмников — комплект из 4 штук (панель водителя + 3 двери пассажиров). Защищают от царапин и износа, устанавливаются без клея. Оранжевый и фиолетовый."
+    },
+    "featured": false
   }
 ]

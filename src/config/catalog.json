@@ -4,6 +4,7 @@
     { "id": "SL03", "name": "Deepal SL03", "type": "sedan" },
     { "id": "S05", "name": "Deepal S05", "type": "suv" },
     { "id": "S07", "name": "Deepal S07", "type": "suv" },
+    { "id": "S09", "name": "Deepal S09", "type": "suv" },
     { "id": "OTHER", "name": "Other EV / Hybrid", "type": "other" }
   ],
   "categories": ["exterior", "lighting", "interior", "comfort", "protection", "maintenance"],

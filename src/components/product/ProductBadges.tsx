@@ -1,4 +1,4 @@
-import { Clock, Sparkles, Wrench } from 'lucide-react'
+import { Sparkles, Tag, Wrench } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import type { Product } from '@/lib/types'
 
@@ -15,8 +15,8 @@ export function ProductBadges({ product, className = '' }: { product: Product; c
         </span>
       )}
       {product.status === 'preorder' && (
-        <span className={`${base} border border-amber-300/30 bg-night-950/70 text-amber-200`}>
-          <Clock size={12} aria-hidden /> {t('badges.preorder')}
+        <span className={`${base} bg-red-500/90 text-white`}>
+          <Tag size={12} aria-hidden /> {t('badges.preorder')}
         </span>
       )}
       {product.freeInstallation && (

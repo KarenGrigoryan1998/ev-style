@@ -55,9 +55,20 @@ export function ProductCard({ product, model }: Props) {
         )}
 
         <div className="mt-auto flex items-end justify-between gap-3">
-          <p className={price ? 'text-base font-bold tracking-tight text-white sm:text-lg' : 'text-xs font-medium text-mist-400 sm:text-sm'}>
-            {price ?? t('common.priceAsk')}
-          </p>
+          {price ? (
+            <p className="text-base font-bold tracking-tight text-white sm:text-lg">{price}</p>
+          ) : (
+            <ContactButton
+              channel="messenger"
+              placement="product"
+              product={product}
+              model={model}
+              className="relative z-10 inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-2.5 py-1 text-xs font-medium text-mist-300 transition-colors hover:border-ev/40 hover:bg-ev/10 hover:text-ev sm:text-sm"
+            >
+              <MessengerIcon size={14} className="shrink-0" />
+              {t('common.priceAsk')}
+            </ContactButton>
+          )}
           <ColorDots colors={product.colors} />
         </div>
 

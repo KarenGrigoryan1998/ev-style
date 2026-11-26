@@ -106,6 +106,27 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/catalog/s07"/>
   </url>
   <url>
+    <loc>https://evstyle.am/catalog/s09</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/catalog/s09"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/catalog/s09"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/catalog/s09"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/catalog/s09"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/en/catalog/s09</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/catalog/s09"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/catalog/s09"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/catalog/s09"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/catalog/s09"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/ru/catalog/s09</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/catalog/s09"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/catalog/s09"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/catalog/s09"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/catalog/s09"/>
+  </url>
+  <url>
     <loc>https://evstyle.am/catalog/other</loc>
     <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/catalog/other"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/catalog/other"/>
@@ -440,5 +461,68 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/wiper-blades"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/wiper-blades"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/wiper-blades"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/product/rear-seat-anti-kick-pad</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/rear-seat-anti-kick-pad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/rear-seat-anti-kick-pad"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/rear-seat-anti-kick-pad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/rear-seat-anti-kick-pad"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/en/product/rear-seat-anti-kick-pad</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/rear-seat-anti-kick-pad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/rear-seat-anti-kick-pad"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/rear-seat-anti-kick-pad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/rear-seat-anti-kick-pad"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/ru/product/rear-seat-anti-kick-pad</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/rear-seat-anti-kick-pad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/rear-seat-anti-kick-pad"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/rear-seat-anti-kick-pad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/rear-seat-anti-kick-pad"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/product/fridge-silicone-pad</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/fridge-silicone-pad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/fridge-silicone-pad"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/fridge-silicone-pad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/fridge-silicone-pad"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/en/product/fridge-silicone-pad</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/fridge-silicone-pad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/fridge-silicone-pad"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/fridge-silicone-pad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/fridge-silicone-pad"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/ru/product/fridge-silicone-pad</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/fridge-silicone-pad"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/fridge-silicone-pad"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/fridge-silicone-pad"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/fridge-silicone-pad"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/product/window-switch-button-covers</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/window-switch-button-covers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/window-switch-button-covers"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/window-switch-button-covers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/window-switch-button-covers"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/en/product/window-switch-button-covers</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/window-switch-button-covers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/window-switch-button-covers"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/window-switch-button-covers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/window-switch-button-covers"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/ru/product/window-switch-button-covers</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/window-switch-button-covers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/window-switch-button-covers"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/window-switch-button-covers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/window-switch-button-covers"/>
   </url>
 </urlset>

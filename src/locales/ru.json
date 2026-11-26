@@ -23,7 +23,7 @@
     "back": "Назад",
     "onlineStore": "Онлайн-магазин · Армения",
     "language": "Язык",
-    "priceAsk": "Цена — напишите нам",
+    "priceAsk": "Узнать цену",
     "socials": "Наши страницы",
     "writeUs": "Написать нам",
     "orderMessenger": "Заказать в Messenger",
@@ -31,7 +31,7 @@
     "messageCopied": "Сообщение скопировано — вставьте его в Messenger"
   },
   "badges": {
-    "preorder": "Под заказ −{{percent}}%",
+    "preorder": "Акция −{{percent}}%",
     "freeInstallation": "Бесплатная установка",
     "new": "Новинка"
   },

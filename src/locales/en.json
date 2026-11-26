@@ -23,7 +23,7 @@
     "back": "Back",
     "onlineStore": "Online store · Armenia",
     "language": "Language",
-    "priceAsk": "Price — message us",
+    "priceAsk": "Ask the price",
     "socials": "Our pages",
     "writeUs": "Message us",
     "orderMessenger": "Order via Messenger",
@@ -31,7 +31,7 @@
     "messageCopied": "Message copied — paste it in Messenger"
   },
   "badges": {
-    "preorder": "Pre-order −{{percent}}%",
+    "preorder": "Sale −{{percent}}%",
     "freeInstallation": "Free installation",
     "new": "New"
   },
