@@ -719,5 +719,37 @@
       "ru": "Силиконовые накладки на кнопки стеклоподъёмников — комплект из 4 штук (панель водителя + 3 двери пассажиров). Защищают от царапин и износа, устанавливаются без клея. Оранжевый и фиолетовый."
     },
     "featured": false
+  },
+  {
+    "id": "deepal-letter",
+    "slug": "deepal-letter-emblem",
+    "category": "exterior",
+    "models": [
+      "SL03",
+      "S05",
+      "S07"
+    ],
+    "price": null,
+    "priceOnRequest": true,
+    "status": "preorder",
+    "freeInstallation": false,
+    "isNew": true,
+    "colors": [
+      "silver"
+    ],
+    "images": [
+      "/images/products/deepal-letter/1"
+    ],
+    "name": {
+      "hy": "DEEPAL քրոմապատ մակագրություն",
+      "en": "DEEPAL chrome letter emblem",
+      "ru": "Хромированная эмблема-надпись DEEPAL"
+    },
+    "description": {
+      "hy": "Ինքնասոսնձվող քրոմապատ «DEEPAL» մակագրություն՝ ետևի կամ կապոտի համար։ Հեշտ է տեղադրվում, առանց հատուկ գործիքների։",
+      "en": "A self-adhesive chrome \"DEEPAL\" letter emblem for the trunk or hood. Easy to fit, no special tools needed.",
+      "ru": "Самоклеящаяся хромированная надпись «DEEPAL» для багажника или капота. Легко устанавливается, без специальных инструментов."
+    },
+    "featured": false
   }
 ]

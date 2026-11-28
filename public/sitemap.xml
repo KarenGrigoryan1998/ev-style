@@ -525,4 +525,25 @@
     <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/window-switch-button-covers"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/window-switch-button-covers"/>
   </url>
+  <url>
+    <loc>https://evstyle.am/product/deepal-letter-emblem</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/deepal-letter-emblem"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/deepal-letter-emblem"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/deepal-letter-emblem"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/deepal-letter-emblem"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/en/product/deepal-letter-emblem</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/deepal-letter-emblem"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/deepal-letter-emblem"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/deepal-letter-emblem"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/deepal-letter-emblem"/>
+  </url>
+  <url>
+    <loc>https://evstyle.am/ru/product/deepal-letter-emblem</loc>
+    <xhtml:link rel="alternate" hreflang="hy" href="https://evstyle.am/product/deepal-letter-emblem"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://evstyle.am/en/product/deepal-letter-emblem"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://evstyle.am/ru/product/deepal-letter-emblem"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://evstyle.am/product/deepal-letter-emblem"/>
+  </url>
 </urlset>

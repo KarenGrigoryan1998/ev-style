@@ -246,6 +246,7 @@
   "catalogCta": {
     "title": "Full catalogue",
     "text": "All accessories with filters by model and category. Pick your car:",
-    "cta": "Open catalogue"
+    "cta": "Open catalogue",
+    "moreCount": "+{{count}} more products"
   }
 }

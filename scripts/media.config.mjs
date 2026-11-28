@@ -6,6 +6,8 @@
  *   { folder: 'Tail Lights' }                      → every photo in products/Tail Lights, A→Z
  *   { folder: 'Tail Lights', photos: ['b.jpg', 'a.jpg'] } → only these, in this order
  *   { photos: ['Folder/a.jpg', '../top-level.jpg'] }   → paths relative to products/
+ *   { photos: [{ file: 'wide-screenshot.png', pad: true }] } → pad to a square instead of
+ *     center-cropping (for a wide/landscape photo where cropping would cut off the subject)
  *
  * After editing, run:  npm run import-media   (converts to WebP and fills "images" in products.json)
  */
@@ -62,6 +64,10 @@ export const PRODUCTS = {
       'openart-image_1795712371748_b10af3f5_1795712372104_35398340.jpg',
       'openart-image_1795712548441_10fa816a_1795712549274_047fa7b5.jpg',
     ],
+  },
+  'deepal-letter': {
+    folder: 'Deepal Letter',
+    photos: [{ file: 'Screenshot 2026-11-28 at 16.46.44.png', pad: true }],
   },
   'window-button-covers': {
     folder: 'Silicon set window btns',

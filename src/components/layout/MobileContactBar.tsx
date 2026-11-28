@@ -1,11 +1,12 @@
-import { Phone } from 'lucide-react'
-import { FacebookIcon, InstagramIcon, TikTokIcon, ViberIcon, WhatsAppIcon } from '@/components/ui/BrandIcons'
+import { LayoutGrid, Phone } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { FacebookIcon, InstagramIcon, ViberIcon, WhatsAppIcon } from '@/components/ui/BrandIcons'
 import { ContactButton, FollowLink } from '@/components/ui/ContactButton'
 import { useLang } from '@/hooks/useLang'
 
-/** Sticky bottom bar on phones: Facebook · Instagram · TikTok · WhatsApp · Viber · Call */
+/** Sticky bottom bar on phones: Facebook · Instagram · Catalog · WhatsApp · Viber · Call */
 export function MobileContactBar() {
-  const { t } = useLang()
+  const { t, to } = useLang()
   const item = 'flex flex-1 flex-col items-center justify-center gap-1 py-2 text-[10px] font-medium transition-colors active:bg-white/5'
   return (
     <nav
@@ -21,10 +22,10 @@ export function MobileContactBar() {
           <InstagramIcon size={22} />
           Instagram
         </FollowLink>
-        <FollowLink network="tiktok" className={`${item} text-white`}>
-          <TikTokIcon size={22} />
-          TikTok
-        </FollowLink>
+        <Link to={to('/catalog')} className={`${item} text-ev`}>
+          <LayoutGrid size={22} aria-hidden />
+          {t('nav.catalog')}
+        </Link>
         <ContactButton channel="whatsapp" placement="sticky" className={`${item} text-[#25D366]`}>
           <WhatsAppIcon size={22} />
           WhatsApp

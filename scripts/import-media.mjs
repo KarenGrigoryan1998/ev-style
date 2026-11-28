@@ -38,15 +38,18 @@ function productPhotos(id, entry) {
       .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
       .map((f) => path.join(base, f))
   }
-  return (entry.photos ?? []).map((p) => path.join(base, p))
+  return (entry.photos ?? []).map((p) => (typeof p === 'string' ? path.join(base, p) : { ...p, src: path.join(base, p.file) }))
 }
 
-async function toWebp(src, outDir, name, { square = true } = {}) {
+async function toWebp(photo, outDir, name, { square = true } = {}) {
+  const forcePad = typeof photo === 'object'
+  const src = forcePad ? photo.src : photo
   if (!fs.existsSync(src)) return warn('missing', path.relative(SOURCE, src)), false
   mkdir(outDir)
-  // Tall photos (e.g. flat-lays on white) are padded to a square with their own background colour instead of cropped
+  // Tall photos (e.g. flat-lays on white) are padded to a square with their own background colour instead of cropped.
+  // Wide photos (e.g. a screenshot where nothing should be cropped off) can opt in with { file, pad: true } in media.config.mjs.
   const meta = await sharp(src).rotate().metadata()
-  const tall = square && meta.height / meta.width > 1.1
+  const tall = square && ((forcePad && photo.pad) || meta.height / meta.width > 1.1)
   let bg = { r: 255, g: 255, b: 255 }
   if (tall) {
     const { data } = await sharp(src).extract({ left: 0, top: 0, width: 4, height: 4 }).removeAlpha().raw().toBuffer({ resolveWithObject: true })
@@ -106,7 +109,10 @@ async function importProducts(only) {
     if (only.length && !only.includes(id)) continue
     if (!ids.has(id)) warn(`${id}: has photos in media.config.mjs but no entry in products.json`)
     const out = path.join(outRoot, id)
-    const photos = productPhotos(id, entry).filter((f) => fs.existsSync(f) || (warn('missing', path.relative(SOURCE, f)), false))
+    const photos = productPhotos(id, entry).filter((f) => {
+      const src = typeof f === 'string' ? f : f.src
+      return fs.existsSync(src) || (warn('missing', path.relative(SOURCE, src)), false)
+    })
     // Safety: never wipe existing images when the source photos can't be found (e.g. folder moved or deleted)
     if (!photos.length) {
       warn(`${id}: no source photos found — keeping the current images`)
